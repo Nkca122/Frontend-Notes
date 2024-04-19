@@ -1,0 +1,107 @@
+> Creating Arrays: 
+    let marks = [99, 85, 93, 76, 62];
+    let names = ["adam", "bob", "catlyn"];
+    let info = ["nkca" , 122 , 9.32];
+
+    let empty = [];
+
+
+> Accessing : 0 based index 
+              arr[index];
+
+              Note: if you acces out of index, then it will return undefined
+              thus you can change out of range values too like in a vector
+
+>  Arrays are mutable, thus the values in them 
+   can be changed 
+
+> Array methods:
+    a. Push : add to end
+    b. Pop : delete from end and return it
+    c. Unshift : add to start
+    d. Shift : delete from start and return it
+    e. indexOf : returns index of argument, if not in the array returns -1
+    f. includes : searches for a value and returns a boolean
+    g. concatenate: primary.concat(secondary);
+    h. reverse: primary.reverse();
+    i. slice: copies a portion of an array
+                Eg 
+                let colors = ['red', 'yellow','blue','green'];
+                let slice = colors.slice(2,3);
+
+                console.log(slice);
+                OUTPUT
+                -> ['blue','green']
+
+
+    j. splice: removes/replaces/add elements in place
+        Eg 
+        let colors = ['red','yellow','blue','orange','pink','white'];
+        colors.splice(4);
+
+        > ['pink','white'] will be removed
+thus
+        colors = ['red','yellow','blue','orange']
+
+        colors.aplice(0,1);
+
+        > ['red'] will be removed
+thus
+        colors = ['yellow','blue', 'orange'];
+
+        colors.splice(0,1, 'black', 'grey');
+
+        >['yellow'] will be removed and ['black','grey'] will be added in its place
+thus        
+        colors = ['black','grey', 'blue', 'orange'];
+
+        k. sort: sorts an array but only strings, 
+                 if array has non string value it will implicitly convert it and then move ahead
+        arr.sort() //ascending
+
+
+
+> Array references:
+    refernces - adress
+    [1] == [1]
+    False
+    [1] === [1]
+    False
+
+    as in js arrays store refernce to each value 
+    instead of the value, thus 
+    a. let arr = [1,2,3,4,5]
+       let brr = [1,2,3,4,5]
+       arr[i] == brr[i] False
+       arr[i] === brr[i] False
+
+    
+    b. let arrCpy = arr;
+       any method performed on arr will be performed on arrCpy 
+       and vice versa
+
+> Constant arrays: 
+    arrays which can't be reassigned but methods can be performed on them
+
+> Nested arrays: 
+    array of arrays 
+    let nums = [[1,2], [2,3]];
+
+> Callback methods
+    a. arr.forEach(function); -> Performs a function for each element in the array
+    b. let newArr = arr.map(function) -> Performs a function for each element 
+                                         in the array and stores the output in a new array
+
+    c. let newArr = arr.filter(function) -> adds element or rejects them
+                                            based on the condition in the 
+                                            filter function
+
+    d. arr.every(function) -> Checks if the condition is true for all every element in the array and returns true
+                              else False {logical &&}
+
+    e. arr.Some(function) -> Checks if the condition is true for any element at all {logical ||}
+
+
+    f. arr.reduce(function with 2 arguments for accumulator and element) -> 
+       -> accumulator stores the previous value returned by the function, eventually reducing the array to a single value
+

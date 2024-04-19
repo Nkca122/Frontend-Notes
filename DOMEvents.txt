@@ -1,0 +1,53 @@
+Events - Signals indicating occurence of something
+    a. click - When an element is clicked
+    b. mouseenter - When a element is entered by the cursor
+
+Event listener - element.addEventListener(event, callback) Allows assigning multiple 
+                 functions
+                 |
+                \|/
+                "this" is used to perform actions on the callback obj
+Eg:
+let btn = document.querySelector("button");
+btn.addEventListener("click", function(){
+    console.log("Button, clicked");
+});
+
+event argument - default argument in eventlistener
+Eg:
+let btn = document.querySelector("button");
+btn.addEventListener("click", function(event){
+    console.dir(event);
+});
+
+Keyboard Events
+Eg: -keydown- When a key is pressed
+    -keyup - When a key is released
+
+    Here we use event argument and its properties 
+        a. code - returns the code of the key pressed
+        b. key - returns the key that was pressed
+
+NOTE : event.preventDefault() to prevent default actions of form
+
+Form Events
+Eg:
+let form = document.querySelector("form");
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    console.log(form.value); //Gives the text input by user in the form
+})
+
+Change Event
+triggers after the value of an element has been changed and left out of focus{
+    <input>, <textarea>, <search>
+}
+
+Input event 
+Checks for every change in value of an element
+
+Event Bubbling
+When event of child is triggered parents event may also triggered which
+can be changed by
+
+event.stopPropogation();

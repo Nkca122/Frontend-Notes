@@ -1,0 +1,19 @@
+> for(initialisation; condition; updation){
+    // Do something
+}
+
+> while (condition) {
+    // Do something
+}
+
+> loops with arrays 
+    let lexicon = ['a','b','c'];
+    for(let i = 0; i < lexicon.length; i++){
+        console.log(i, lexicon[i]);
+    }
+
+    OR
+
+    for(alphabet of lexicon) {
+        console.log(alphabet);
+    }

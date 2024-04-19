@@ -1,0 +1,17 @@
+let newElem = document.createElement('tag');
+
+Then the element is added using the following methods:
+    a. obj.append(newElem); - To add at the end of the obj/
+                              also used for adding text or string in an element such as newElem.append("Text");
+    b. obj.appendChild(newElem); - To append in obj as child
+    c. obj.prepend(newElem); - To add before the obj 
+    d. obj.insertAdjacent(where parameter, element)
+    parameters include 
+        beforebegin{before target obj}, 
+        afterbegin{before first child}, 
+        beforeend{after last child}, 
+        afterend{after end of target obj}
+
+and removed using the followin elements
+    a. .removeChild(Elem);
+    b. .remove();

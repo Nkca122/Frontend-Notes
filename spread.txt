@@ -1,0 +1,26 @@
+> Used to expand an iterable into multiple values
+Eg
+let arr = [112,34,56,68,89,90];
+console.log(...arr);
+console.log(Math.min(...arr));
+
+//Thus we can copy arrays without causing operations
+//to happen on both
+
+let newArr = [...arr];
+
+let hello = "hello";
+let chars = [...hello];
+
+chars would be ['h','e','l','l','o'];
+
+
+> Spread withe object literals
+Eg: 
+const data = {
+    email: "nkca122@gmail.com",
+    pswd: "ABCD"
+};
+
+const dataCopy = {...data, id: 123};
+

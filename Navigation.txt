@@ -1,0 +1,5 @@
+> obj.parentElement - returns parentElement of obj
+> obj.children - returns children of obj as HTML collection
+> obj.nextElementSibling - returns next next sibling 
+> obj.previousElementSibling - returns previous sibling 
+

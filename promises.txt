@@ -1,0 +1,89 @@
+The Promise object represents the eventual completion (or failure) of
+an asynchrous operation and its resulting value.
+    => resolve  - sucess
+    => reject - failure
+promises are rejected and resolved with some data(valid or invalid)
+Eg: 
+
+//Imagine a database
+
+let saveToDB = (data)=>{
+    
+    return new Promise((resolve, reject)=>{
+        let internetSpeed = Math.floor(Math.random()*10) + 1;
+        if(internetSpeed > 4){
+            resolve("YES");
+        } else {
+            reject("NO");
+        }
+    })
+}
+
+let request = saveToDB("Nikunj");
+request
+    .then((result)=>{
+        console.log("Resolved");
+        console.log(result);
+    })
+    .catch((result)=>{
+        console.log("Rejected");
+        console.log(result);
+    })
+
+
+Promise chaining
+Eg
+
+saveToDB("Nikunj")
+    .then(()=>{
+        console.log("D1 saved");
+        saveToDB("Chauhan").then(()=>{
+            console.log("D2 saved");
+        })
+    })
+
+    .catch(()=>{
+        console.log("Failed Connection");
+    }) 
+
+OR 
+
+saveToDB("Nikunj")
+    .then(()=>{
+        console.log("D1 saved");
+        return saveToDB("Chauhan";)
+    })
+
+    .then(()=>{
+        console.log("D2 saved");
+    })
+
+    .catch(()=>{
+        console.log("Failed Connection");
+    }) 
+
+
+
+Solving our callback hell
+
+let h1 = document.querySelector("h1");
+
+changeColor(color) => {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            h1.style.color = color;
+            resolve("next");
+        },1000)
+    })
+}
+
+changeColor("red")
+    .then(()=>{
+        return changeColor("green");
+    })
+    .then(()=>{
+        return changeColor("blue");
+    })
+    .catch(()=>{
+        console.log("error");
+    })

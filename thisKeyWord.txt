@@ -1,0 +1,19 @@
+> this keyword refers to an object that is executing the current piece
+  of code.
+
+Eg
+const student = {
+    name: "Nikunj",
+    age: 19,
+    eng: 100,
+    math: 100,
+    phy: 100,
+    getAvg(){
+        let avg = (this.eng + this.math + this.phy)/3;  //Here this refers
+        console.log(avg);                               //the object student as the function resides there
+    }
+
+}
+
+
+> With arrow functions

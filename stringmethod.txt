@@ -1,0 +1,48 @@
+These string methods dont change the original stringbut rather
+output a new string
+
+1. Trim - Remove whitespaces from ends of the string
+    Eg let msg = "    Hello  ";
+    let msgTrimmed = msg.trim();  
+
+    console.log(msgTrimmed);
+
+NOTE: Strings are immutable in JS ie: no changes can be
+made to strings, as whenever we do try so, a new string 
+is created 
+
+2. toUpperCase() and toLowerCase():
+    let name = "Nikunj";
+    let NAME = name.toUpperCase();
+
+3. Methods with Arguments
+    stringName.method(arg);
+
+    a. str.indexOf("string") : Returns the index of occurence of some value in string
+                               else -1 if not found. 
+
+    b. str.slice(startindex,endindex) : Returns a part of theoriginal string as a new
+                                        string 
+
+                                        NOTE: > if endindex is not mentioned it will take the last index as the 
+                                        end point 
+
+                                              > if negative number num is passed it will be passed as str.length - num
+
+    c. replace : searches a value in the string and returns a new string with the first 
+                 occurence of the value replaced
+                 let str = "I do coding, do drawing";
+                 str.slice("do","love"); //"I love Coding, do drawing"
+
+    d. repeat: Returns a string with the number of copies of a string
+               Eg : let msg = "Mango";
+                    msgRepeat = msg.repeat(3);
+                    console.log(msgRepeat); //"MangoMangoMango" 
+4. Method Chaining
+    Using one method after another. (Order of execution will be left to right)
+
+    Eg: str.toUpperCase().trim();
+
+
+
+

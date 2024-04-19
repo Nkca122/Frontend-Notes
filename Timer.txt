@@ -1,0 +1,5 @@
+>  setTimeout(function, timeout) -> Performs a function after a set 
+                                    delay only once.
+>  setInterval(function, timeout) -> Performs a function periodically with a set
+                                    interval
+

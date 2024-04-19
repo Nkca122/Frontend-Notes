@@ -1,0 +1,32 @@
+> Functions defined in objects
+
+const calculator = {
+    add: function(a, b){
+        return a+b;
+    },
+
+    subtract: function(a, b){
+        return a-b;
+    },
+
+    multiply: function(a, b){
+        return a*b;
+    },
+
+    divide: function(a, b){
+        return a/b;
+    }
+};
+
+//Like Maths object
+
+//Shorthand
+
+const calculate = {
+    sum(a,b){
+        return a+b;
+    },
+    sub(a,b){
+        return a-b;
+    }
+}

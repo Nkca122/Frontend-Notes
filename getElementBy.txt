@@ -1,0 +1,14 @@
+> getElementById("id") : Returns the element as an object {or null if not found}
+> getElemntByClassName("class"): Returns the elements as an HTML collection or empty collection {if not found}
+                                 HTML collection allows access to each object via index, but array methods like push pop or not applicable
+                                 Eg : collection.element[0];
+> getElementByTagName("tag"): Returns the elements as an HTML collection or empty collection {if not found}
+> querySelector('p') //Selects first paragraph element
+  querySelector('#myID') //Selects first element with id = myID
+  querySelector('.myClass') //Selects first element with class = myClass
+
+
+> querySelectorAll("p") //Selects all paragraph elements as a Node list
+
+
+  

@@ -1,0 +1,23 @@
+1. console.log(); for outputting to console
+2. alert(); pop up alert from browser
+3. prompt(); pop up prompt to take input from the user
+
+To define variables 
+    - let
+    - const - constant
+    - var (oudated, as leaves security issues)
+
+NaN 
+    Not a number
+
+null and undefined
+    null - empty by design
+    undefined - empty
+    
+Truthy and Falsy values:
+    True : 
+    False : 
+
+Embedded expressions/Templates
+`$(expression) to print a value within a string`
+

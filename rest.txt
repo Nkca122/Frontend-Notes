@@ -1,0 +1,17 @@
+>Allows a function to take an indefinite number of 
+ arguments and bundle them in an array
+
+Eg:
+function sum(...args){
+    let sum = 0;
+    for(value of args){
+        sum += value;
+}
+
+return sum;
+}
+
+
+//Note this array by default is called arguments, 
+//but does not completely behave like an array as 
+//its methods are not applicable

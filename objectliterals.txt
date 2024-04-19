@@ -1,0 +1,88 @@
+Used to store keyed collections & complex entities
+(Similar to structures)
+
+let student = {
+    name: "Nikunj",
+    age: 19,
+    marks: 94.8,
+    city: "Delhi"
+};
+
+generally const is used to
+define object literals
+
+//Accessing
+student.name or student["name"]
+
+Note: JavaScript automatically converts keys 
+to strings in object literals
+
+//Add or update values
+
+Now consider
+const student {
+    name: "Nikunj",
+    city: "Delhi"
+};
+
+//Change the city to mumbai and add gender male
+
+student.city = "Mumbai";
+student.gender = "Male";
+
+//Datatype does not matter in reinitializing values
+//To remove key value pairs
+delete(student.name);
+
+
+
+Object of objects
+
+const class =  {
+
+    student1 : {
+        roll-no: 21,
+        grade: 'A'
+    },
+
+    student2 : {
+        roll-no: 22,
+        grade: 'B'
+    }
+
+};
+
+Array of objects
+
+const classInfo =
+[
+    {
+        name: "Aman",
+        grade: 'A'
+    },
+
+    {
+        name: "Takshay",
+        grade: 'B'
+    },
+
+]
+
+
+> Math Object [Most Used, Others exist]
+Properties          Methods
+a. Math.PI          a. Math.abs(n)
+b. Math.E           b. Math.pow(a, b)
+                    c. Math.floor(n) -> returns smallest integer value
+                    d. Math.ceil(n) -> returns greatest integer value
+                    e. Math.random() -> 0 to 1
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+callback hell => 
+Eg You have to change the color of a heading 
+with one second delays then
+
+let h1 = document.querySelector("h1");
+
+function changeColour(color, delay, nextColorChange){
+    setTimeout(()=>{
+        h1.style.color = color;
+        if(nextColorChange) nextColorChange();
+    },delay);
+}
+
+changeColor("red", 1000, ()=>{
+    changeColor("green",1000, ()=> {
+        changeColor("orange", 1000);
+    });
+});
+
+// A very tedious method
+// This nesting of callbacks is called
+//callback hell
+
+Solution - promises
+
+async and await keywords
+
+async - Creates an async function, which always returns a promise
+
+await - pauses the execution of its surrounding async function untill promise is settled

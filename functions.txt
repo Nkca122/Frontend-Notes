@@ -1,0 +1,91 @@
+> Functions
+-Function Definition
+
+    function functionName(){
+        //Do something
+    }
+
+-Function Calling
+
+    functionName();
+
+-Functions with Arguments
+    function functionName(arg1, arg2){  NOTE: only argument name is mentioned
+        //Do something                        as JS implicitly detects the type    
+    }
+Eg
+
+function printNameStatus(name, age){
+    console.log(name);
+    if(age >= 18){
+        console.log("Adult");
+    } else {
+        console.log("Minor");
+    }
+}
+
+-return keyword
+used to return some value from the function
+
+> function expressions
+e.g. let greet = function(greeting){
+    console.log(greeting);
+}
+
+greet("Namaste");
+
+> Higher Order Functions - Mainly used in API's
+A function that does either or both
+    a. Takes one or multiple functions as Arguments
+    b. returns a function
+
+a. Eg:
+function multipleGreet(func, n){
+    for(int i = 0; i<n; i++){
+        func();
+    }
+}
+
+let greet = function() {
+    console.log("Namaste");
+}
+
+multipleGreet(greet, 9);
+
+b. Eg:
+function oddEvenFactory(request) {
+    if(request == "odd"){
+        return function(n){
+            console.log(!(n%2==0));
+        }
+    } else if(request == "even"){
+        return function(n){
+            console.log(n%2==0);
+        }
+    } else {
+        console.log("Wrong request");
+    }
+}
+
+let request = "odd";
+
+let func = oddEvenFactory(request);
+func(5);
+
+-Arrow functions 
+Eg: 
+
+const sum = (a,b) => {
+    console.log(a+b);
+}
+
+Eg: Implicit return  (When only a return statement is required)
+
+const product = (a, b) => a*b;
+
+-Default Parameters: Unless the argument is passed by user, the default value will be used
+const sum = function (a, b = 3){
+    return a+b;
+}
+
+sum(2); -> OUTPUT 5

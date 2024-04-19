@@ -1,0 +1,24 @@
+> obj.getAttribute(attr)
+> obj.setAttribute(attr,val);
+
+> Manipulating style:
+    properties from css to js change as follows:
+        Eg: border-radius : borderRadius {Into camel case};
+
+obj.style.property = val; //But only in inline, thus used infrequently
+
+
+> inner text, inner html, text content
+
+
+> obj.classList() - returns a DOMTokenList of all classes
+  Methods:
+    a. obj.classList.add("newClass")
+    b. obj.classList.remove("Class")
+    c. obj.classList.contains("Class") - returns true or false
+    d. obj.classList.toggle("Class") - toggle between add and remove
+
+
+
+
+
