@@ -26,5 +26,4 @@ Solution - promises
 async and await keywords
 
 async - Creates an async function, which always returns a promise
-
 await - pauses the execution of its surrounding async function untill promise is settled
