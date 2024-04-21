@@ -1,4 +1,30 @@
 An API, or application programming interface, is a set of rules or protocols that enables software applications to communicate with each other to exchange data, features and functionality.
 
 Web API's return data in JSON format
+a.  JSON.parse(data) - to parse string data into a JS object
+b.  JSON.stringify(json) - to parse a JS object data into json
+
+
+Testing api requests: 
+    a. hoppscotch   b.postman
+
+Ajax - asynchronous javascript and XML {Now JSON but as ajax sounds cooler unlike ajaj so ehhh.........}
+
+HTTPS Verbs:
+    a. GET: get data
+    b. POST: send data
+    c. DELETE
+
+Status codes Eg: 404 Not found etc.
+
+Query Strings: Add information to your urls
+An HTTP header is a field of an HTTP request or response that passes additional context and metadata about the request or response.
+Eg in google searches
+
+https://www.google.com/search?q=harry+potter
+                       |____| | |__________|_ Value
+                     header  Key             
+
+
+First API Request programm
 

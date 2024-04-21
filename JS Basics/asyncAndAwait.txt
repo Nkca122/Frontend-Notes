@@ -27,3 +27,5 @@ async and await keywords
 
 async - Creates an async function, which always returns a promise
 await - pauses the execution of its surrounding async function untill promise is settled
+
+The async function declaration creates a binding of a new async function to a given name. The await keyword is permitted within the function body, enabling asynchronous, promise-based behavior to be written in a cleaner style and avoiding the need to explicitly configure promise chains.
