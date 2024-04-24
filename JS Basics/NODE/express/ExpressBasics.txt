@@ -1,0 +1,7 @@
+Express is a node.js is web apllication framework that helps us to make web apllications and server side programming
+
+Ports are logical endpoints of a network connection 
+that is used to exchange information between a web server 
+and a web client
+
+For basic setup look at basics.js

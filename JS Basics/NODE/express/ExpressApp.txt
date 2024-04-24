@@ -1,0 +1,16 @@
+The app, created by `express()`, is just a handy function that handles different types of requests
+
+app.listen() in Express is like telling your app to start listening for visitors on a specific address and port
+    Syntax: 
+        app.listen(port, callback)
+
+
+app.use() in Express is used to check for request sent to the server
+and in turn act accordingly. {It turns request into an object}
+look for its basic in basics.js
+
+
+
+
+
+

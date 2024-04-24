@@ -1,0 +1,9 @@
+Read Evaluate print loop - 
+Format of javascript control flow
+
+Node is a runtime environment
+for javascript
+
+
+Run a js file in a directory with node 
+    -node fileName.js

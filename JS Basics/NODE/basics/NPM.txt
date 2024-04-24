@@ -1,0 +1,22 @@
+npm (Node Package Manager) is the standard package manager for Node.js
+
+    -library of packages
+    -command line tool
+
+
+Installing packages 
+    => npm install package-name  //Locally, prefered method
+    => npm install -g package-name
+    npm link package-name //globally, not preferred
+
+using a module
+const name = require("package-name");
+
+
+npm init to make a package.json
+
+import - asynchronous v/s require - synchronous
+
+
+
+

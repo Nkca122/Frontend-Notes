@@ -1,0 +1,17 @@
+> process is an object which provides 
+information about and control over, 
+the current Node.js process
+
+> process.argv is a method which 
+returns an array containing the
+command line arguments passed when 
+the Node.js process was launched
+
+Eg in js file
+let arr = [...process.argv];
+for(el of arr){
+    console.log(el);
+}
+
+
+

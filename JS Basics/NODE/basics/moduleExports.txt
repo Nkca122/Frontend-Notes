@@ -1,0 +1,6 @@
+module.exports is used to export information from files 
+into another in the form of objects
+
+eg 
+look at math.js and exportExample.js
+
