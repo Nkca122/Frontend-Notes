@@ -1,0 +1,12 @@
+  =>  For static files like CSS
+app.use(express.static("public"));
+                OR
+app.use(express.static(path.join(__dirname,"/public")));
+-to make them accesible to ejs
+
+
+  =>  For sub templates, make a includes folder in views
+    and use these in ejs
+
+
+<%- include("includes/head.ejs")%>
