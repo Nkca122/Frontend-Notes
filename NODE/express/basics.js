@@ -18,6 +18,5 @@ app.use((req, res)=>{
     // }); 
     //To send a json object
 
-    
 
 })

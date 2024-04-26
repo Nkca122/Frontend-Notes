@@ -30,6 +30,18 @@ Example:
 
 
     Path parameters
+        Example
+            app.get("/:username/:id",(req,res)=>{
+                let {username} = req.params;
+                console.log(`The username is: ${username}`);
+            })
+
+    Query Strings
+        Example
+            app.get("/search", (req,res)=>{
+                let {q} = req.query;
+                console.log(q);
+            })
     
 
 
