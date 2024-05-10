@@ -1,0 +1,78 @@
+OOPS - Object Orientation Programming Systems
+
+Object Prototypes:
+    Prototypes are the mechanism by which javascript objects inherit features 
+    from one another
+
+arr._proto {Refernce}
+Array.prototype {Actual object}
+
+Factory Functions:
+    A function that creates objects
+Ex=>    
+    function PersonMaker(name, age) {
+        const person = {
+            name: name,
+            age: age,
+            printData(){
+                console.log(`My name is ${this.name}`);
+            }
+        }
+
+        return person;
+    }
+
+    Disadvantage: Every object makes its own functions like printData copy
+
+
+New Operator
+    The new operator creates an instance of a user defined object type or of 
+    one of the built in types that has a constructor function
+
+Ex:
+
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.talk(){
+    console.log(`Hello, my name is ${this.name}`);
+}
+
+const p1 = new Person("Nikunj",19);
+
+
+Class and Inheritance:
+    Ex:
+
+    class Box {
+        constructor (name, l , b) {
+            this.name = name;
+            this.l = l;
+            this.b = b;
+        }
+
+        area() {
+            let area = this.l*this.b;
+            console.log(`${name}'s area is ${area}`);
+        }
+    }
+
+
+    class Square extends Box {
+        constructor(a, color) {
+            super("square", a, a);
+            this.color = color;
+        }
+    }
+
+    let sq1 = new Square(4, "red");
+    sq1.area();
+
+
+
+    NOTE: if an area function was defined also in the Square class 
+    it will ovveride the parent class Box.
+
+    
