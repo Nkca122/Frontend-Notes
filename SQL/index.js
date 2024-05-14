@@ -52,7 +52,20 @@ app.get("/user",(req, res)=>{
         console.log(err);
         res.send("Error");
     }
-})
+});
+
+app.get("/user/:id/edit", (req,res)=>{
+    let {id} = req.params;
+    connection.query(`SELECT id,username,email FROM user where id = '${id}' `, (err, result)=>{
+        try{
+            if(err) throw err;
+            res.render("edituser.ejs", {result});
+        } catch (err) {
+            console.log(err);
+            res.send("Error");
+        }
+    })
+});
 
 
 

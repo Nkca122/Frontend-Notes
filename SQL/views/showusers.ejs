@@ -18,8 +18,14 @@
             <td><%= user.id %></td>
             <td><%= user.username %></td>
             <td><%= user.email %></td>
+            <td>
+                <form method="GET" action = "/user/<%= user.id %>/edit" >
+                    <button>Edit user</button>
+                </form>
+        </td>
         </tr>
         <% } %>
 </table>
+<script src = "editButton.js"></script>
 </body>
 </html>
