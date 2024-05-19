@@ -1,0 +1,15 @@
+request -> Middlewares -> Response
+Common middleware functions in express
+    a. express.static
+    b. bodyParser
+    c. methodOverride
+    d. express.urlencoded
+can be chained
+
+USES:
+    1. Execute any code.
+    2. Make changes to the request and response objects.
+    3. End the request-response cycle
+    4. Call the next middleware function in the stack
+
+
